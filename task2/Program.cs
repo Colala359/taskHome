@@ -8,6 +8,7 @@ internal class Program
             Напишите программу вычисления функции Аккермана с помощью рекурсии. 
             Даны два неотрицательных числа m и n.*/
 
+        //Функция аккермана
         int Ack(int m, int n)
         {
             if (m == 0) return n + 1;
@@ -15,7 +16,7 @@ internal class Program
             else return Ack(m - 1, Ack(m, n - 1));
         }
 
-
+        //Задаем значения M и N. Печать функции.
         Console.Write("Введите значение M: ");
         int M = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите значение N: ");
