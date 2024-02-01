@@ -10,7 +10,7 @@ internal class Program
 
         void naturDigit(int M, int N)
         {
-            if (N < M) return;
+            if (N < M || M < 1) return;
             naturDigit(M, N - 1);
             Console.Write($"{N} ");
 
@@ -21,7 +21,7 @@ internal class Program
         int M = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите значение N: ");
         int N = Convert.ToInt32(Console.ReadLine());
-        if (N < M) Console.WriteLine("Неверное значение.");
+        if (N < M || M < 1) Console.WriteLine("Неверное значение.");
 
         naturDigit(M, N);
 
